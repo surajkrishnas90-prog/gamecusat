@@ -1,0 +1,16 @@
+<h2>Admin Activity</h2>
+
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Time</th>
+<th>Admin</th>
+<th>Action</th>
+<th>User</th>
+</tr>
+</thead>
+
+<tbody id="logBody"></tbody>
+</table>
+
+<script type="module" src="app.js"></script>

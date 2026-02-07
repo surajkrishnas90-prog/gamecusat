@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+
+  <!-- Only dashboard css -->
+  <link rel="stylesheet" href="css/dashboard.css">
+
+  <script type="module" src="app.js" defer></script>
+</head>
+
+<body>
+
+<div class="admin-page">
+
+  <!-- HEADER -->
+  <header class="admin-header">
+    <h2>Admin Dashboard</h2>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+
+  <!-- SEARCH -->
+  <div class="search-box">
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="Search by name / email / college">
+  </div>
+
+
+  <!-- USERS -->
+  <section class="card">
+
+    <h3>All Users</h3>
+
+    <div class="table-wrapper">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>College</th>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="userList"></tbody>
+
+      </table>
+
+    </div>
+
+  </section>
+
+
+  <!-- DELETED -->
+  <section class="card">
+
+    <h3>Deleted Users</h3>
+
+    <div id="deletedList"></div>
+
+  </section>
+
+
+  <!-- LOGS -->
+  <section class="card">
+
+    <h3>Admin Activity Logs</h3>
+
+    <div class="table-wrapper">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Admin</th>
+            <th>Action</th>
+            <th>User</th>
+          </tr>
+        </thead>
+
+        <tbody id="logBody"></tbody>
+
+      </table>
+
+    </div>
+
+  </section>
+
+
+</div>
+
+</body>
+</html>
