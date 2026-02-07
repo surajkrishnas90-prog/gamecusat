@@ -1,0 +1,237 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family: Arial, sans-serif;
+}
+
+body{
+ background:#0f172a;
+ color:#e5e7eb;
+ min-height:100vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+
+.card{
+ background:#020617;
+ padding:30px;
+ width:350px;
+ border-radius:12px;
+ box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+h2{
+ text-align:center;
+ margin-bottom:20px;
+}
+
+input{
+ width:100%;
+ padding:10px;
+ margin:10px 0;
+ border:none;
+ border-radius:6px;
+ background:#020617;
+ color:white;
+ border:1px solid #1e293b;
+}
+
+button{
+ width:100%;
+ padding:10px;
+ background:#2563eb;
+ border:none;
+ border-radius:6px;
+ color:white;
+ font-weight:bold;
+ cursor:pointer;
+}
+
+button:hover{
+ background:#1d4ed8;
+}
+
+.list-item{
+ background:#020617;
+ padding:15px;
+ margin:10px 0;
+ border-radius:8px;
+ border:1px solid #1e293b;
+}
+/* ================= ADMIN PANEL ONLY ================= */
+
+.admin-page {
+  background: #0f172a;
+  min-height: 100vh;
+
+  /* cancel login centering */
+  display: block;
+  padding: 40px 60px;
+}
+
+/* override body flex ONLY for admin */
+
+.admin-page body {
+  display: block;
+}
+
+/* Main container */
+
+.admin-page .admin-container {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  background: #020617;
+
+  padding: 40px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* Headings */
+
+.admin-page h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.admin-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #93c5fd;
+}
+
+/* Search */
+
+.admin-page .search-box {
+  width: 100%;
+  padding: 14px 16px;
+
+  margin: 25px 0;
+
+  font-size: 15px;
+
+  border-radius: 8px;
+
+  background: #020617;
+  color: white;
+
+  border: 1px solid #1e293b;
+}
+
+/* Table */
+
+.admin-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-page th {
+  background: #020617;
+  color: #60a5fa;
+
+  padding: 14px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.admin-page td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #1e293b;
+  font-size: 14px;
+}
+
+.admin-page tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* Buttons in admin */
+
+.admin-page .btn {
+  width: auto;
+  padding: 6px 12px;
+
+  border-radius: 6px;
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.admin-page .approve {
+  background: #22c55e;
+}
+
+.admin-page .ban {
+  background: #ef4444;
+}
+
+.admin-page .unban {
+  background: #3b82f6;
+}
+
+.admin-page .reject {
+  background: #64748b;
+
+}
+
+
+.actions button{
+  margin: 4px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.actions .danger{
+  background:#dc2626;
+}
+
+.actions .warn{
+  background:#f59e0b;
+}
+
+
+.admin-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logout-btn{
+  padding:6px 14px;
+  background:#dc2626;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.table-wrapper{
+  overflow-x:auto;
+}
+
+.deleted-box p{
+  background:#111827;
+  padding:8px;
+  border-radius:6px;
+  margin:5px 0;
+}
+
+.search-box input{
+  width:100%;
+  padding:8px;
+  margin:10px 0 20px;
+  border-radius:6px;
+  border:1px solid #333;
+}
+
+
+

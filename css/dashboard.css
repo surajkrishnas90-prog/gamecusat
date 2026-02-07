@@ -1,0 +1,189 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+/* BACKGROUND */
+body {
+  background: radial-gradient(circle at top, #06142c, #020617);
+  color: #fff;
+  min-height: 100vh;
+}
+
+
+/* MAIN WRAPPER */
+.admin-page {
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px;
+}
+
+
+/* HEADER */
+.admin-header {
+  background: linear-gradient(90deg, #031c4d, #02102e);
+  padding: 20px 25px;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.admin-header h2 {
+  color: #60a5fa;
+}
+
+.logout-btn {
+  background: #dc2626;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #b91c1c;
+}
+
+
+/* SEARCH */
+.search-box {
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #020617;
+  color: white;
+  border: 1px solid #1e3a8a;
+}
+
+
+/* CARDS */
+.card {
+  background: linear-gradient(180deg, #020b24, #020617);
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #60a5fa;
+}
+
+
+/* TABLE */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #020b3a;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #1e3a8a;
+}
+
+th {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+tr:hover {
+  background: rgba(59,130,246,0.07);
+}
+
+
+/* ACTION BUTTONS */
+.action-box {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-box button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+/* BUTTON COLORS */
+
+.btn-approve {
+  background: #22c55e;
+  color: #052e16;
+}
+
+.btn-reject {
+  background: #f59e0b;
+  color: #3b1d04;
+}
+
+.btn-ban {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-delete {
+  background: #7c2d12;
+  color: white;
+}
+
+.btn-unban {
+  background: #38bdf8;
+  color: #082f49;
+}
+
+.btn-restore {
+  background: #2563eb;
+  color: white;
+}
+
+
+/* DELETED USERS */
+#deletedList p {
+  background: #020b3a;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#deletedList button {
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn-admin { background:#2563eb; color:white; }
+.btn-dev { background:#9333ea; color:white; }
+.btn-player { background:#64748b; color:white; }
